@@ -238,6 +238,7 @@
 		2246DF9821709F6E00063587 /* BookWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookWindow.xib; sourceTree = "<group>"; };
 		224771E5217EC5BF004C3C98 /* BookMainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookMainWindow.h; sourceTree = "<group>"; };
 		224771E6217EC5C9004C3C98 /* BookMainWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookMainWindow.m; sourceTree = "<group>"; };
+		2249342F24AAF2D000A14A78 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = docs/libmobi/README.md; sourceTree = "<group>"; };
 		225532422179DA77008CF384 /* BookInfoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookInfoTableView.h; sourceTree = "<group>"; };
 		225532432179DAA2008CF384 /* BookInfoTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookInfoTableView.m; sourceTree = "<group>"; };
 		225E0AE821965E9D0080E652 /* libepub.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libepub.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -401,13 +402,8 @@
 		1539675F1907BC0600EDC923 /* docs */ = {
 			isa = PBXGroup;
 			children = (
-				152ED797195EFBD900ACD1AD /* ChangeLog */,
+				2249343024AAF2EC00A14A78 /* libmobi */,
 				15843DFE19215D0400587C89 /* README.md */,
-				15D7CFD71A167A3A00F08927 /* README.md */,
-				15E65B5F1A1E0FC100B7FBBD /* .travis.yml */,
-				153967601907C0AA00EDC923 /* COPYING */,
-				15E65B5E1A1DF1DA00B7FBBD /* mobitool.1.in */,
-				15E5FAD91CC58B4D00F700D1 /* mobimeta.1.in */,
 			);
 			name = docs;
 			sourceTree = "<group>";
@@ -563,6 +559,20 @@
 				150A318B18E19BD8001A7AD7 /* write.h */,
 				156AA65B1C81A3860085335A /* xmlwriter.c */,
 				156AA65C1C81A3860085335A /* xmlwriter.h */,
+			);
+			name = libmobi;
+			sourceTree = "<group>";
+		};
+		2249343024AAF2EC00A14A78 /* libmobi */ = {
+			isa = PBXGroup;
+			children = (
+				15E65B5F1A1E0FC100B7FBBD /* .travis.yml */,
+				153967601907C0AA00EDC923 /* COPYING */,
+				15E65B5E1A1DF1DA00B7FBBD /* mobitool.1.in */,
+				15E5FAD91CC58B4D00F700D1 /* mobimeta.1.in */,
+				152ED797195EFBD900ACD1AD /* ChangeLog */,
+				15D7CFD71A167A3A00F08927 /* README.md */,
+				2249342F24AAF2D000A14A78 /* README.md */,
 			);
 			name = libmobi;
 			sourceTree = "<group>";
