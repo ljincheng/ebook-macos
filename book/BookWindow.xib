@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BookWindow">
+            <connections>
+                <outlet property="bookColorSegmentedContrl" destination="E0U-XZ-N9M" id="sg5-SF-kBw"/>
+                <outlet property="bookMenuSegmentedContrl" destination="g20-EP-TZ0" id="vBQ-YA-FGv"/>
+                <outlet property="bookTitleLabel" destination="Xhs-jL-vjQ" id="cnC-aF-YYv"/>
+                <outlet property="mainSplitView" destination="ozz-U8-b2h" id="RHo-ll-MOB"/>
+                <outlet property="mainToolbar" destination="5di-hW-hVi" id="nJu-yj-udD"/>
+                <outlet property="mainWindow" destination="QvC-M9-y7g" id="UPd-lt-g8N"/>
+                <outlet property="menuOutlineView" destination="jHW-d8-4CH" id="UqC-cy-5PX"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="BookReadWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="400" height="220"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="220"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <splitView hidden="YES" dividerStyle="thin" vertical="YES" id="ozz-U8-b2h">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="220"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView fixedFrame="YES" id="9Wl-IA-jiz">
+                                <rect key="frame" x="0.0" y="0.0" width="105" height="220"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OG-t3-6ez">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="mcw-4Z-cmz">
+                                            <rect key="frame" x="0.0" y="0.0" width="305" height="220"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <outlineView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="22" indentationPerLevel="14" outlineTableColumn="m2I-mv-IyZ" id="jHW-d8-4CH" customClass="BookNavOutlineView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="305" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <size key="intercellSpacing" width="3" height="0.0"/>
+                                                    <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="gridColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    <tableColumns>
+                                                        <tableColumn width="302" minWidth="40" maxWidth="1000" id="m2I-mv-IyZ">
+                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                            </tableHeaderCell>
+                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="pmu-oY-PLM">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                        </tableColumn>
+                                                    </tableColumns>
+                                                </outlineView>
+                                            </subviews>
+                                            <nil key="backgroundColor"/>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="SKV-Ln-xcD">
+                                            <rect key="frame" x="0.0" y="4" width="105" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Y6l-Yy-Pbk">
+                                            <rect key="frame" x="289" y="20" width="16" height="0.0"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                            </customView>
+                            <customView fixedFrame="YES" id="GbP-Kd-lCz">
+                                <rect key="frame" x="106" y="0.0" width="294" height="220"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="250"/>
+                        </holdingPriorities>
+                    </splitView>
+                </subviews>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="07DB44D0-19DF-4EF1-B507-806DB8134E89" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="5di-hW-hVi">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="NcO-jX-id7"/>
+                    <toolbarItem implicitItemIdentifier="C06EB209-57EC-4302-A5F2-F1E990D2F380" label="Custom View" paletteLabel="Custom View" sizingBehavior="auto" id="73B-98-zMB">
+                        <nil key="toolTip"/>
+                        <textField key="view" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="Xhs-jL-vjQ">
+                            <rect key="frame" x="0.0" y="14" width="342" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <textFieldCell key="cell" selectable="YES" alignment="center" title="Multiline Label" id="gBK-h6-Wtv">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="9EDA0ABC-3BFA-4379-BAE4-6A438529161B" label="底色" paletteLabel="底色" sizingBehavior="auto" id="d7P-94-lhf">
+                        <nil key="toolTip"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="E0U-XZ-N9M">
+                            <rect key="frame" x="0.0" y="14" width="216" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="selectOne" id="J8x-f0-mxU">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment label="白纸"/>
+                                    <segment label="黄皮" selected="YES" tag="1"/>
+                                    <segment label="铝板"/>
+                                    <segment label=" 黑板"/>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="3E106F0D-BA6C-42C5-989D-DEBC1EA0335B" label="显示目录" paletteLabel="显示目录" sizingBehavior="auto" id="L5m-mA-1Nb">
+                        <nil key="toolTip"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="g20-EP-TZ0">
+                            <rect key="frame" x="0.0" y="14" width="109" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="selectAny" id="KeC-dD-a1r">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment label="目录"/>
+                                    <segment label="单页" tag="1"/>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="NcO-jX-id7"/>
+                    <toolbarItem reference="73B-98-zMB"/>
+                    <toolbarItem reference="NcO-jX-id7"/>
+                    <toolbarItem reference="d7P-94-lhf"/>
+                    <toolbarItem reference="L5m-mA-1Nb"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <point key="canvasLocation" x="58" y="122"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="4Zb-1P-Axb"/>
+    </objects>
+</document>

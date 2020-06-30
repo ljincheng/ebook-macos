@@ -1,0 +1,1520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1502448F1CD3A18F0075F4EC /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 1502448D1CD3A18F0075F4EC /* sha1.c */; };
+		150244901CD3A18F0075F4EC /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1502448E1CD3A18F0075F4EC /* sha1.h */; };
+		1504FD851CBE880B002AA042 /* meta.c in Sources */ = {isa = PBXBuildFile; fileRef = 1504FD831CBE880B002AA042 /* meta.c */; };
+		1504FD861CBE880B002AA042 /* meta.h in Headers */ = {isa = PBXBuildFile; fileRef = 1504FD841CBE880B002AA042 /* meta.h */; };
+		150A318D18E19BF9001A7AD7 /* write.c in Sources */ = {isa = PBXBuildFile; fileRef = 150A318C18E19BF9001A7AD7 /* write.c */; };
+		151A46661909312900FAF3F4 /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = 151A46651909312900FAF3F4 /* miniz.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		153D91DB18E9630000E807B6 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 153D91DA18E9630000E807B6 /* memory.c */; };
+		1543065B1CB78A45006AB398 /* mobimeta.c in Sources */ = {isa = PBXBuildFile; fileRef = 151185A31CB6C28500201C8A /* mobimeta.c */; };
+		1543065E1CB78BA8006AB398 /* libmobi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 150039BB18E06BC100D33077 /* libmobi.dylib */; };
+		154C2D401CC64A170041DD0E /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 154C2D3E1CC64A170041DD0E /* common.c */; };
+		154C2D411CC64A170041DD0E /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 154C2D3E1CC64A170041DD0E /* common.c */; };
+		1550ADC318E427D7006F9257 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1550ADC218E427D7006F9257 /* buffer.c */; };
+		1550ADCE18E4B925006F9257 /* compression.c in Sources */ = {isa = PBXBuildFile; fileRef = 1550ADCD18E4B925006F9257 /* compression.c */; };
+		1553330118E359AE00334E23 /* read.c in Sources */ = {isa = PBXBuildFile; fileRef = 1553330018E359AE00334E23 /* read.c */; };
+		1553332118E37FC400334E23 /* libmobi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 150039BB18E06BC100D33077 /* libmobi.dylib */; };
+		15603889192D2E1A002EDB1A /* opf.c in Sources */ = {isa = PBXBuildFile; fileRef = 15603888192D2E1A002EDB1A /* opf.c */; };
+		15615F0818F58C85004EBB6E /* mobitool.c in Sources */ = {isa = PBXBuildFile; fileRef = 15615F0718F58C85004EBB6E /* mobitool.c */; };
+		1563314718EC36A200D4B858 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 1563314618EC36A200D4B858 /* debug.c */; };
+		156AA65D1C81A3860085335A /* xmlwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = 156AA65B1C81A3860085335A /* xmlwriter.c */; };
+		156AA65E1C81A3860085335A /* xmlwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 156AA65C1C81A3860085335A /* xmlwriter.h */; };
+		157DF7AD191A514D00191502 /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = 157DF7AC191A514D00191502 /* index.c */; };
+		15AB2CB419572C2800EB7F74 /* parse_rawml.c in Sources */ = {isa = PBXBuildFile; fileRef = 15AB2CB319572C2800EB7F74 /* parse_rawml.c */; };
+		15EA81DF1A14D5AC00138554 /* structure.c in Sources */ = {isa = PBXBuildFile; fileRef = 15EA81DE1A14D5AC00138554 /* structure.c */; };
+		15F1A1D118F4192D009CFE05 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 15F1A1D018F4192D009CFE05 /* util.c */; };
+		15FB2BB21A1A32970052D5C5 /* encryption.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FB2BB01A1A32970052D5C5 /* encryption.c */; };
+		15FB2BB31A1A32970052D5C5 /* encryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FB2BB11A1A32970052D5C5 /* encryption.h */; };
+		2204714721800ED7001AFAB7 /* BookSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204714621800ED7001AFAB7 /* BookSearchField.m */; };
+		220C854F2151016600EE11A9 /* Book-doc.m in Sources */ = {isa = PBXBuildFile; fileRef = 220C854E2151016600EE11A9 /* Book-doc.m */; };
+		2211964D2160774700CD260A /* Book-nav.m in Sources */ = {isa = PBXBuildFile; fileRef = 2211964C2160774700CD260A /* Book-nav.m */; };
+		2213CA9D21A1BC3300CCA856 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2263E1A72196DABA00E199D8 /* libxml2.tbd */; };
+		22155DF52150B18000DE9A40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22155DF42150B18000DE9A40 /* AppDelegate.m */; };
+		22155DF82150B18000DE9A40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22155DF72150B18000DE9A40 /* main.m */; };
+		22155DFD2150B18000DE9A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22155DFC2150B18000DE9A40 /* Assets.xcassets */; };
+		2231029B2191F70200E09E82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2231029A2191F70200E09E82 /* main.m */; };
+		2232BD932397B8DE00B67A28 /* libarchive.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2243490F217DBDD0006393F5 /* libarchive.16.dylib */; };
+		2232BD9B2397BB1800B67A28 /* BrowserWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2232BD942397BB1700B67A28 /* BrowserWindow.m */; };
+		2232BD9C2397BB1800B67A28 /* BookWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2232BD952397BB1700B67A28 /* BookWindowController.m */; };
+		2232BD9D2397BB1800B67A28 /* BrowserWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2232BD972397BB1700B67A28 /* BrowserWindowController.m */; };
+		2232BDA02397BB2F00B67A28 /* BrowserWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2232BD9F2397BB2F00B67A28 /* BrowserWindow.xib */; };
+		2239FDAE2152625500071349 /* BookRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 2239FDAD2152625500071349 /* BookRead.m */; };
+		22400C17217ED52900B1B3E4 /* BookApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22400C16217ED52900B1B3E4 /* BookApp.xib */; };
+		22462C862199B897004A259C /* Book-epub.m in Sources */ = {isa = PBXBuildFile; fileRef = 22462C852199B897004A259C /* Book-epub.m */; };
+		22462C872199C819004A259C /* libepub.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 225E0AE821965E9D0080E652 /* libepub.dylib */; };
+		2246DF952170305300063587 /* BookWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246DF942170305300063587 /* BookWindow.m */; };
+		2246DF9921709F6E00063587 /* BookWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2246DF9821709F6E00063587 /* BookWindow.xib */; };
+		224771E7217EC5C9004C3C98 /* BookMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 224771E6217EC5C9004C3C98 /* BookMainWindow.m */; };
+		225532442179DAA2008CF384 /* BookInfoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225532432179DAA2008CF384 /* BookInfoTableView.m */; };
+		225E0AEB21965E9D0080E652 /* epub.h in Headers */ = {isa = PBXBuildFile; fileRef = 225E0AEA21965E9D0080E652 /* epub.h */; };
+		225E0AED21965E9D0080E652 /* epub.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E0AEC21965E9D0080E652 /* epub.m */; };
+		2263E1A52196D6C100E199D8 /* epub-archive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263E1A42196D6C100E199D8 /* epub-archive.m */; };
+		2263E1A82196DABA00E199D8 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2263E1A72196DABA00E199D8 /* libxml2.tbd */; };
+		226BEE652182FFAA00C45BD5 /* BookFileImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 226BEE642182FFAA00C45BD5 /* BookFileImport.m */; };
+		227BA8CD2197E06600E92049 /* libepub.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 225E0AE821965E9D0080E652 /* libepub.dylib */; };
+		227BA8D02197E4E600E92049 /* epub-doc.m in Sources */ = {isa = PBXBuildFile; fileRef = 227BA8CF2197E4E600E92049 /* epub-doc.m */; };
+		227BA8D321988A2500E92049 /* epub-resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 227BA8D221988A2500E92049 /* epub-resource.m */; };
+		227D937D217EFBC900D45533 /* BookReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 227D937C217EFBC900D45533 /* BookReadView.m */; };
+		229AC813215499AF0053FE69 /* Book-chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 229AC812215499AF0053FE69 /* Book-chapter.m */; };
+		229FB28A214BB4840059C714 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 229FB289214BB4840059C714 /* main.c */; };
+		229FB28E214BB8040059C714 /* libmobi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 150039BB18E06BC100D33077 /* libmobi.dylib */; };
+		22AB4BB8217F027C00817CCB /* BookReadWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB4BB7217F027C00817CCB /* BookReadWindow.m */; };
+		22B25F3E21786A080067DBFF /* BookToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B25F3D21786A080067DBFF /* BookToolbar.m */; };
+		22B365962150DA6700516EC0 /* libmobi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 150039BB18E06BC100D33077 /* libmobi.dylib */; };
+		22B365992150F21600516EC0 /* Book-mobi.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B365982150F21600516EC0 /* Book-mobi.m */; };
+		22BDF684217AA9EE00CE46D7 /* BookMarkOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BDF683217AA9EE00CE46D7 /* BookMarkOutlineView.m */; };
+		22BDF687217ABF7F00CE46D7 /* BookNavOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BDF686217ABF7F00CE46D7 /* BookNavOutlineView.m */; };
+		22BF6BC521A8522000F367FA /* epub-utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF6BC421A8522000F367FA /* epub-utils.m */; };
+		22D27338216F57FA00E91A7B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D27337216F57FA00E91A7B /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		22E1723B21770EEE003C0124 /* BookDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1723A21770EEE003C0124 /* BookDatabase.m */; };
+		22E1723E217734A8003C0124 /* BookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1723D217734A8003C0124 /* BookInfo.m */; };
+		22EA87BA216BAA4C0055B960 /* Book-mark.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EA87B9216BAA4C0055B960 /* Book-mark.m */; };
+		22FEE9CC21AA8D8D00C01D15 /* book-play.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FEE9CB21AA8D8D00C01D15 /* book-play.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1543065C1CB78B78006AB398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150039B318E06BC100D33077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150039BA18E06BC100D33077;
+			remoteInfo = mobi;
+		};
+		1553331F18E37FB800334E23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150039B318E06BC100D33077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150039BA18E06BC100D33077;
+			remoteInfo = mobi;
+		};
+		229FB28F214BB9770059C714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150039B318E06BC100D33077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150039BA18E06BC100D33077;
+			remoteInfo = mobi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		154306521CB78A3D006AB398 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1553331418E37F7000334E23 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		223102962191F70200E09E82 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		229FB285214BB4840059C714 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		150039BB18E06BC100D33077 /* libmobi.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmobi.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		150039C218E06C1B00D33077 /* mobi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = mobi.h; path = src/mobi.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		1502448D1CD3A18F0075F4EC /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = src/sha1.c; sourceTree = "<group>"; };
+		1502448E1CD3A18F0075F4EC /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = src/sha1.h; sourceTree = "<group>"; };
+		1504FD831CBE880B002AA042 /* meta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = meta.c; path = src/meta.c; sourceTree = "<group>"; };
+		1504FD841CBE880B002AA042 /* meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = meta.h; path = src/meta.h; sourceTree = "<group>"; };
+		150A318B18E19BD8001A7AD7 /* write.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = write.h; path = src/write.h; sourceTree = "<group>"; };
+		150A318C18E19BF9001A7AD7 /* write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = write.c; path = src/write.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		151185A31CB6C28500201C8A /* mobimeta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mobimeta.c; path = tools/mobimeta.c; sourceTree = SOURCE_ROOT; };
+		151A46641909302C00FAF3F4 /* miniz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = miniz.h; path = src/miniz.h; sourceTree = "<group>"; };
+		151A46651909312900FAF3F4 /* miniz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = miniz.c; path = src/miniz.c; sourceTree = "<absolute>"; };
+		152D509E1BD79AE400E91C09 /* test.sh.in */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = test.sh.in; path = tests/test.sh.in; sourceTree = "<group>"; };
+		152D50A01BD7A08300E91C09 /* Makefile.am */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; name = Makefile.am; path = tests/Makefile.am; sourceTree = "<group>"; usesTabs = 1; xcLanguageSpecificationIdentifier = xcode.lang.sh; };
+		152E5D1218F5DEB100B05EC9 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.csh; };
+		152E5D1318F5DEB100B05EC9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		152E5D1418F5DEC000B05EC9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.am; path = src/Makefile.am; sourceTree = "<group>"; };
+		152E5D1518F5DECF00B05EC9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.am; path = tools/Makefile.am; sourceTree = "<group>"; };
+		152E5D1618F5E22000B05EC9 /* autogen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
+		152ED797195EFBD900ACD1AD /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		153967601907C0AA00EDC923 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		153D91DA18E9630000E807B6 /* memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = memory.c; path = src/memory.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		153D91DC18E9633500E807B6 /* memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = memory.h; path = src/memory.h; sourceTree = "<group>"; };
+		1542B8041C7FA5E800C5122F /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getopt.c; path = tools/win32/getopt.c; sourceTree = SOURCE_ROOT; };
+		1542B8051C7FA5E900C5122F /* getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = getopt.h; path = tools/win32/getopt.h; sourceTree = SOURCE_ROOT; };
+		154306541CB78A3D006AB398 /* mobimeta */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mobimeta; sourceTree = BUILT_PRODUCTS_DIR; };
+		154C2D3E1CC64A170041DD0E /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = common.c; path = tools/common.c; sourceTree = SOURCE_ROOT; };
+		154C2D3F1CC64A170041DD0E /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = tools/common.h; sourceTree = SOURCE_ROOT; };
+		1550ADC218E427D7006F9257 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = src/buffer.c; sourceTree = "<group>"; };
+		1550ADC418E42842006F9257 /* buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = src/buffer.h; sourceTree = "<group>"; };
+		1550ADCD18E4B925006F9257 /* compression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = compression.c; path = src/compression.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		1550ADCF18E4BB83006F9257 /* compression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = compression.h; path = src/compression.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		1553330018E359AE00334E23 /* read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = read.c; path = src/read.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		1553330218E359B900334E23 /* read.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = read.h; path = src/read.h; sourceTree = "<group>"; };
+		1553331618E37F7000334E23 /* mobitool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mobitool; sourceTree = BUILT_PRODUCTS_DIR; };
+		1559D790191BB06700636661 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = src/config.h; sourceTree = "<group>"; };
+		15603888192D2E1A002EDB1A /* opf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = opf.c; path = src/opf.c; sourceTree = "<group>"; };
+		1560388A192D2E34002EDB1A /* opf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opf.h; path = src/opf.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		15615F0718F58C85004EBB6E /* mobitool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = mobitool.c; path = tools/mobitool.c; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		1563314518EC367300D4B858 /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = debug.h; path = src/debug.h; sourceTree = "<group>"; };
+		1563314618EC36A200D4B858 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = debug.c; path = src/debug.c; sourceTree = "<group>"; };
+		156AA65B1C81A3860085335A /* xmlwriter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xmlwriter.c; path = src/xmlwriter.c; sourceTree = "<group>"; };
+		156AA65C1C81A3860085335A /* xmlwriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = src/xmlwriter.h; sourceTree = "<group>"; };
+		157DF7AC191A514D00191502 /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = index.c; path = src/index.c; sourceTree = "<group>"; };
+		157DF7AE191A51A400191502 /* index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = index.h; path = src/index.h; sourceTree = "<group>"; };
+		15843DFE19215D0400587C89 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		158F44DC191E88010000F44A /* libmobi.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libmobi.pc.in; sourceTree = "<group>"; };
+		15AB2CB319572C2800EB7F74 /* parse_rawml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parse_rawml.c; path = src/parse_rawml.c; sourceTree = "<group>"; };
+		15AB2CB519572C4400EB7F74 /* parse_rawml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = parse_rawml.h; path = src/parse_rawml.h; sourceTree = "<group>"; };
+		15D7CFD71A167A3A00F08927 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = tools/README.md; sourceTree = "<group>"; };
+		15E5FAD91CC58B4D00F700D1 /* mobimeta.1.in */ = {isa = PBXFileReference; lastKnownFileType = text; name = mobimeta.1.in; path = tools/mobimeta.1.in; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.man; };
+		15E65B5E1A1DF1DA00B7FBBD /* mobitool.1.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mobitool.1.in; path = tools/mobitool.1.in; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.man; };
+		15E65B5F1A1E0FC100B7FBBD /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		15EA81DD1A14D58500138554 /* structure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = structure.h; path = src/structure.h; sourceTree = SOURCE_ROOT; };
+		15EA81DE1A14D5AC00138554 /* structure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = structure.c; path = src/structure.c; sourceTree = "<group>"; };
+		15F1A1D018F4192D009CFE05 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = util.c; path = src/util.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		15F1A1D218F4195A009CFE05 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = util.h; path = src/util.h; sourceTree = "<group>"; };
+		15FB2BB01A1A32970052D5C5 /* encryption.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encryption.c; path = src/encryption.c; sourceTree = "<group>"; };
+		15FB2BB11A1A32970052D5C5 /* encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = encryption.h; path = src/encryption.h; sourceTree = "<group>"; };
+		2204714521800E9C001AFAB7 /* BookSearchField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookSearchField.h; sourceTree = "<group>"; };
+		2204714621800ED7001AFAB7 /* BookSearchField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookSearchField.m; sourceTree = "<group>"; };
+		220C854D2150F74400EE11A9 /* Book-doc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Book-doc.h"; sourceTree = "<group>"; };
+		220C854E2151016600EE11A9 /* Book-doc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Book-doc.m"; sourceTree = "<group>"; };
+		2211964B216076B500CD260A /* Book-nav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Book-nav.h"; sourceTree = "<group>"; };
+		2211964C2160774700CD260A /* Book-nav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Book-nav.m"; sourceTree = "<group>"; };
+		22155DF12150B18000DE9A40 /* book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = book.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22155DF32150B18000DE9A40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22155DF42150B18000DE9A40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22155DF72150B18000DE9A40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22155DFC2150B18000DE9A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22155E012150B18000DE9A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223102982191F70200E09E82 /* archivetest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = archivetest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2231029A2191F70200E09E82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		223102A22191F7E400E09E82 /* libarchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.tbd; path = usr/lib/libarchive.tbd; sourceTree = SDKROOT; };
+		2232BD942397BB1700B67A28 /* BrowserWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserWindow.m; sourceTree = "<group>"; };
+		2232BD952397BB1700B67A28 /* BookWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookWindowController.m; sourceTree = "<group>"; };
+		2232BD962397BB1700B67A28 /* BrowserWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserWindow.h; sourceTree = "<group>"; };
+		2232BD972397BB1700B67A28 /* BrowserWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserWindowController.m; sourceTree = "<group>"; };
+		2232BD992397BB1800B67A28 /* BookWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookWindowController.h; sourceTree = "<group>"; };
+		2232BD9A2397BB1800B67A28 /* BrowserWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserWindowController.h; sourceTree = "<group>"; };
+		2232BD9F2397BB2F00B67A28 /* BrowserWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserWindow.xib; sourceTree = "<group>"; };
+		2239FDAC2152619800071349 /* BookRead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookRead.h; sourceTree = "<group>"; };
+		2239FDAD2152625500071349 /* BookRead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookRead.m; sourceTree = "<group>"; };
+		22400C16217ED52900B1B3E4 /* BookApp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookApp.xib; sourceTree = "<group>"; };
+		22434771217DAA0D006393F5 /* libmobi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmobi.dylib; path = ../../../../../../usr/local/lib/libmobi.dylib; sourceTree = "<group>"; };
+		224348DE217DB0C3006393F5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2243490D217DBD19006393F5 /* libarchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libarchive.a; path = ../../../../lab/gcc/libarchive/libarchive/Debug/libarchive.a; sourceTree = "<group>"; };
+		2243490F217DBDD0006393F5 /* libarchive.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libarchive.16.dylib; path = ../../../../lab/gcc/libarchive/libarchive/Debug/libarchive.16.dylib; sourceTree = "<group>"; };
+		22462C842199B86D004A259C /* Book-epub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Book-epub.h"; sourceTree = "<group>"; };
+		22462C852199B897004A259C /* Book-epub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Book-epub.m"; sourceTree = "<group>"; };
+		2246DF932170302E00063587 /* BookWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookWindow.h; sourceTree = "<group>"; };
+		2246DF942170305300063587 /* BookWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookWindow.m; sourceTree = "<group>"; };
+		2246DF9821709F6E00063587 /* BookWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookWindow.xib; sourceTree = "<group>"; };
+		224771E5217EC5BF004C3C98 /* BookMainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookMainWindow.h; sourceTree = "<group>"; };
+		224771E6217EC5C9004C3C98 /* BookMainWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookMainWindow.m; sourceTree = "<group>"; };
+		225532422179DA77008CF384 /* BookInfoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookInfoTableView.h; sourceTree = "<group>"; };
+		225532432179DAA2008CF384 /* BookInfoTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookInfoTableView.m; sourceTree = "<group>"; };
+		225E0AE821965E9D0080E652 /* libepub.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libepub.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		225E0AEA21965E9D0080E652 /* epub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = epub.h; sourceTree = "<group>"; };
+		225E0AEC21965E9D0080E652 /* epub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = epub.m; sourceTree = "<group>"; };
+		2263E1A32196D65A00E199D8 /* epub-archive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epub-archive.h"; sourceTree = "<group>"; };
+		2263E1A42196D6C100E199D8 /* epub-archive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "epub-archive.m"; sourceTree = "<group>"; };
+		2263E1A72196DABA00E199D8 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		226BEE632182FEDE00C45BD5 /* BookFileImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookFileImport.h; sourceTree = "<group>"; };
+		226BEE642182FFAA00C45BD5 /* BookFileImport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookFileImport.m; sourceTree = "<group>"; };
+		227BA8CE2197E4CA00E92049 /* epub-doc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epub-doc.h"; sourceTree = "<group>"; };
+		227BA8CF2197E4E600E92049 /* epub-doc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "epub-doc.m"; sourceTree = "<group>"; };
+		227BA8D121988A0600E92049 /* epub-resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epub-resource.h"; sourceTree = "<group>"; };
+		227BA8D221988A2500E92049 /* epub-resource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "epub-resource.m"; sourceTree = "<group>"; };
+		227D937B217EFB8600D45533 /* BookReadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookReadView.h; sourceTree = "<group>"; };
+		227D937C217EFBC900D45533 /* BookReadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookReadView.m; sourceTree = "<group>"; };
+		229AC81121548EA60053FE69 /* Book-chapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Book-chapter.h"; sourceTree = "<group>"; };
+		229AC812215499AF0053FE69 /* Book-chapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Book-chapter.m"; sourceTree = "<group>"; };
+		229FB287214BB4840059C714 /* booktest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = booktest; sourceTree = BUILT_PRODUCTS_DIR; };
+		229FB289214BB4840059C714 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		229FB2C6214BBE4D0059C714 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		22AB4BB6217F026C00817CCB /* BookReadWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookReadWindow.h; sourceTree = "<group>"; };
+		22AB4BB7217F027C00817CCB /* BookReadWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookReadWindow.m; sourceTree = "<group>"; };
+		22B25F3C217869C80067DBFF /* BookToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookToolbar.h; sourceTree = "<group>"; };
+		22B25F3D21786A080067DBFF /* BookToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookToolbar.m; sourceTree = "<group>"; };
+		22B365972150F1E300516EC0 /* Book-mobi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Book-mobi.h"; sourceTree = "<group>"; };
+		22B365982150F21600516EC0 /* Book-mobi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Book-mobi.m"; sourceTree = "<group>"; };
+		22BDF682217AA9DB00CE46D7 /* BookMarkOutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookMarkOutlineView.h; sourceTree = "<group>"; };
+		22BDF683217AA9EE00CE46D7 /* BookMarkOutlineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookMarkOutlineView.m; sourceTree = "<group>"; };
+		22BDF685217ABF6D00CE46D7 /* BookNavOutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookNavOutlineView.h; sourceTree = "<group>"; };
+		22BDF686217ABF7F00CE46D7 /* BookNavOutlineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookNavOutlineView.m; sourceTree = "<group>"; };
+		22BF6BC321A851B400F367FA /* epub-utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epub-utils.h"; sourceTree = "<group>"; };
+		22BF6BC421A8522000F367FA /* epub-utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "epub-utils.m"; sourceTree = "<group>"; };
+		22D27337216F57FA00E91A7B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		22E1723921770C22003C0124 /* BookDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookDatabase.h; sourceTree = "<group>"; };
+		22E1723A21770EEE003C0124 /* BookDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookDatabase.m; sourceTree = "<group>"; };
+		22E1723C21771D1F003C0124 /* BookInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookInfo.h; sourceTree = "<group>"; };
+		22E1723D217734A8003C0124 /* BookInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookInfo.m; sourceTree = "<group>"; };
+		22EA87B8216BA9FC0055B960 /* Book-mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Book-mark.h"; sourceTree = "<group>"; };
+		22EA87B9216BAA4C0055B960 /* Book-mark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Book-mark.m"; sourceTree = "<group>"; };
+		22FEE9B221AA8AD400C01D15 /* book-play.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "book-play.h"; sourceTree = "<group>"; };
+		22FEE9CB21AA8D8D00C01D15 /* book-play.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "book-play.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		150039B818E06BC100D33077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154306511CB78A3D006AB398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1543065E1CB78BA8006AB398 /* libmobi.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1553331318E37F7000334E23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1553332118E37FC400334E23 /* libmobi.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22155DEE2150B18000DE9A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2213CA9D21A1BC3300CCA856 /* libxml2.tbd in Frameworks */,
+				22462C872199C819004A259C /* libepub.dylib in Frameworks */,
+				22D27338216F57FA00E91A7B /* libsqlite3.tbd in Frameworks */,
+				22B365962150DA6700516EC0 /* libmobi.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223102952191F70200E09E82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227BA8CD2197E06600E92049 /* libepub.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225E0AE621965E9D0080E652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2232BD932397B8DE00B67A28 /* libarchive.16.dylib in Frameworks */,
+				2263E1A82196DABA00E199D8 /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229FB284214BB4840059C714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229FB28E214BB8040059C714 /* libmobi.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150039B218E06BC100D33077 = {
+			isa = PBXGroup;
+			children = (
+				22382097214B996A007263F3 /* libmobi */,
+				152D509F1BD79AED00E91C09 /* tests */,
+				1539675F1907BC0600EDC923 /* docs */,
+				1553331718E37F7100334E23 /* tools */,
+				229FB288214BB4840059C714 /* booktest */,
+				22155DF22150B18000DE9A40 /* book */,
+				223102992191F70200E09E82 /* archivetest */,
+				225E0AE921965E9D0080E652 /* epub */,
+				150039BC18E06BC100D33077 /* Products */,
+				152E5CFE18F5DB3200B05EC9 /* autotools */,
+				229FB2C5214BBE4D0059C714 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		150039BC18E06BC100D33077 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150039BB18E06BC100D33077 /* libmobi.dylib */,
+				1553331618E37F7000334E23 /* mobitool */,
+				154306541CB78A3D006AB398 /* mobimeta */,
+				229FB287214BB4840059C714 /* booktest */,
+				22155DF12150B18000DE9A40 /* book.app */,
+				223102982191F70200E09E82 /* archivetest */,
+				225E0AE821965E9D0080E652 /* libepub.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		152D509F1BD79AED00E91C09 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				152D509E1BD79AE400E91C09 /* test.sh.in */,
+				152D50A01BD7A08300E91C09 /* Makefile.am */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+		152E5CFE18F5DB3200B05EC9 /* autotools */ = {
+			isa = PBXGroup;
+			children = (
+				152E5D1618F5E22000B05EC9 /* autogen.sh */,
+				152E5D1218F5DEB100B05EC9 /* configure.ac */,
+				158F44DC191E88010000F44A /* libmobi.pc.in */,
+				152E5D1518F5DECF00B05EC9 /* Makefile.am */,
+				152E5D1418F5DEC000B05EC9 /* Makefile.am */,
+				152E5D1318F5DEB100B05EC9 /* Makefile.am */,
+			);
+			name = autotools;
+			sourceTree = "<group>";
+		};
+		1539675F1907BC0600EDC923 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				152ED797195EFBD900ACD1AD /* ChangeLog */,
+				15843DFE19215D0400587C89 /* README.md */,
+				15D7CFD71A167A3A00F08927 /* README.md */,
+				15E65B5F1A1E0FC100B7FBBD /* .travis.yml */,
+				153967601907C0AA00EDC923 /* COPYING */,
+				15E65B5E1A1DF1DA00B7FBBD /* mobitool.1.in */,
+				15E5FAD91CC58B4D00F700D1 /* mobimeta.1.in */,
+			);
+			name = docs;
+			sourceTree = "<group>";
+		};
+		1553331718E37F7100334E23 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				151185A31CB6C28500201C8A /* mobimeta.c */,
+				15615F0718F58C85004EBB6E /* mobitool.c */,
+				1542B8041C7FA5E800C5122F /* getopt.c */,
+				1542B8051C7FA5E900C5122F /* getopt.h */,
+				154C2D3E1CC64A170041DD0E /* common.c */,
+				154C2D3F1CC64A170041DD0E /* common.h */,
+			);
+			name = tools;
+			path = test;
+			sourceTree = SOURCE_ROOT;
+		};
+		22155DF22150B18000DE9A40 /* book */ = {
+			isa = PBXGroup;
+			children = (
+				22FEE9B121AA8A3100C01D15 /* video */,
+				22325741217F3363001FAF60 /* bookwindow */,
+				22325740217F32CC001FAF60 /* appwindow */,
+				22361F19215F534400F116C0 /* resouce */,
+				22155DFC2150B18000DE9A40 /* Assets.xcassets */,
+				22155E012150B18000DE9A40 /* Info.plist */,
+				22155DF62150B18000DE9A40 /* Supporting Files */,
+				22B365972150F1E300516EC0 /* Book-mobi.h */,
+				22B365982150F21600516EC0 /* Book-mobi.m */,
+				220C854D2150F74400EE11A9 /* Book-doc.h */,
+				220C854E2151016600EE11A9 /* Book-doc.m */,
+				2239FDAC2152619800071349 /* BookRead.h */,
+				2239FDAD2152625500071349 /* BookRead.m */,
+				229AC81121548EA60053FE69 /* Book-chapter.h */,
+				229AC812215499AF0053FE69 /* Book-chapter.m */,
+				2211964B216076B500CD260A /* Book-nav.h */,
+				2211964C2160774700CD260A /* Book-nav.m */,
+				22EA87B8216BA9FC0055B960 /* Book-mark.h */,
+				22EA87B9216BAA4C0055B960 /* Book-mark.m */,
+				22E1723921770C22003C0124 /* BookDatabase.h */,
+				22E1723A21770EEE003C0124 /* BookDatabase.m */,
+				22E1723C21771D1F003C0124 /* BookInfo.h */,
+				22E1723D217734A8003C0124 /* BookInfo.m */,
+				22462C842199B86D004A259C /* Book-epub.h */,
+				22462C852199B897004A259C /* Book-epub.m */,
+			);
+			path = book;
+			sourceTree = "<group>";
+		};
+		22155DF62150B18000DE9A40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22155DF72150B18000DE9A40 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		223102992191F70200E09E82 /* archivetest */ = {
+			isa = PBXGroup;
+			children = (
+				2231029A2191F70200E09E82 /* main.m */,
+			);
+			path = archivetest;
+			sourceTree = "<group>";
+		};
+		22325740217F32CC001FAF60 /* appwindow */ = {
+			isa = PBXGroup;
+			children = (
+				2232BD992397BB1800B67A28 /* BookWindowController.h */,
+				2232BD952397BB1700B67A28 /* BookWindowController.m */,
+				2232BD962397BB1700B67A28 /* BrowserWindow.h */,
+				2232BD942397BB1700B67A28 /* BrowserWindow.m */,
+				2232BD9A2397BB1800B67A28 /* BrowserWindowController.h */,
+				2232BD972397BB1700B67A28 /* BrowserWindowController.m */,
+				22155DF32150B18000DE9A40 /* AppDelegate.h */,
+				22155DF42150B18000DE9A40 /* AppDelegate.m */,
+				22BDF682217AA9DB00CE46D7 /* BookMarkOutlineView.h */,
+				22BDF683217AA9EE00CE46D7 /* BookMarkOutlineView.m */,
+				224771E5217EC5BF004C3C98 /* BookMainWindow.h */,
+				224771E6217EC5C9004C3C98 /* BookMainWindow.m */,
+				225532422179DA77008CF384 /* BookInfoTableView.h */,
+				225532432179DAA2008CF384 /* BookInfoTableView.m */,
+				2204714521800E9C001AFAB7 /* BookSearchField.h */,
+				2204714621800ED7001AFAB7 /* BookSearchField.m */,
+				226BEE632182FEDE00C45BD5 /* BookFileImport.h */,
+				226BEE642182FFAA00C45BD5 /* BookFileImport.m */,
+			);
+			name = appwindow;
+			sourceTree = "<group>";
+		};
+		22325741217F3363001FAF60 /* bookwindow */ = {
+			isa = PBXGroup;
+			children = (
+				2246DF932170302E00063587 /* BookWindow.h */,
+				2246DF942170305300063587 /* BookWindow.m */,
+				22B25F3C217869C80067DBFF /* BookToolbar.h */,
+				22B25F3D21786A080067DBFF /* BookToolbar.m */,
+				22BDF685217ABF6D00CE46D7 /* BookNavOutlineView.h */,
+				22BDF686217ABF7F00CE46D7 /* BookNavOutlineView.m */,
+				227D937B217EFB8600D45533 /* BookReadView.h */,
+				227D937C217EFBC900D45533 /* BookReadView.m */,
+				22AB4BB6217F026C00817CCB /* BookReadWindow.h */,
+				22AB4BB7217F027C00817CCB /* BookReadWindow.m */,
+			);
+			name = bookwindow;
+			sourceTree = "<group>";
+		};
+		22361F19215F534400F116C0 /* resouce */ = {
+			isa = PBXGroup;
+			children = (
+				2232BD9F2397BB2F00B67A28 /* BrowserWindow.xib */,
+				2246DF9821709F6E00063587 /* BookWindow.xib */,
+				22400C16217ED52900B1B3E4 /* BookApp.xib */,
+			);
+			name = resouce;
+			sourceTree = "<group>";
+		};
+		22382097214B996A007263F3 /* libmobi */ = {
+			isa = PBXGroup;
+			children = (
+				1550ADC218E427D7006F9257 /* buffer.c */,
+				1550ADC418E42842006F9257 /* buffer.h */,
+				1550ADCD18E4B925006F9257 /* compression.c */,
+				1550ADCF18E4BB83006F9257 /* compression.h */,
+				1559D790191BB06700636661 /* config.h */,
+				1563314618EC36A200D4B858 /* debug.c */,
+				1563314518EC367300D4B858 /* debug.h */,
+				15FB2BB01A1A32970052D5C5 /* encryption.c */,
+				15FB2BB11A1A32970052D5C5 /* encryption.h */,
+				157DF7AC191A514D00191502 /* index.c */,
+				157DF7AE191A51A400191502 /* index.h */,
+				153D91DA18E9630000E807B6 /* memory.c */,
+				153D91DC18E9633500E807B6 /* memory.h */,
+				1504FD831CBE880B002AA042 /* meta.c */,
+				1504FD841CBE880B002AA042 /* meta.h */,
+				151A46651909312900FAF3F4 /* miniz.c */,
+				151A46641909302C00FAF3F4 /* miniz.h */,
+				150039C218E06C1B00D33077 /* mobi.h */,
+				15603888192D2E1A002EDB1A /* opf.c */,
+				1560388A192D2E34002EDB1A /* opf.h */,
+				15AB2CB319572C2800EB7F74 /* parse_rawml.c */,
+				15AB2CB519572C4400EB7F74 /* parse_rawml.h */,
+				1553330018E359AE00334E23 /* read.c */,
+				1553330218E359B900334E23 /* read.h */,
+				1502448D1CD3A18F0075F4EC /* sha1.c */,
+				1502448E1CD3A18F0075F4EC /* sha1.h */,
+				15EA81DE1A14D5AC00138554 /* structure.c */,
+				15EA81DD1A14D58500138554 /* structure.h */,
+				15F1A1D018F4192D009CFE05 /* util.c */,
+				15F1A1D218F4195A009CFE05 /* util.h */,
+				150A318C18E19BF9001A7AD7 /* write.c */,
+				150A318B18E19BD8001A7AD7 /* write.h */,
+				156AA65B1C81A3860085335A /* xmlwriter.c */,
+				156AA65C1C81A3860085335A /* xmlwriter.h */,
+			);
+			name = libmobi;
+			sourceTree = "<group>";
+		};
+		225E0AE921965E9D0080E652 /* epub */ = {
+			isa = PBXGroup;
+			children = (
+				225E0AEA21965E9D0080E652 /* epub.h */,
+				225E0AEC21965E9D0080E652 /* epub.m */,
+				2263E1A32196D65A00E199D8 /* epub-archive.h */,
+				2263E1A42196D6C100E199D8 /* epub-archive.m */,
+				227BA8CE2197E4CA00E92049 /* epub-doc.h */,
+				227BA8CF2197E4E600E92049 /* epub-doc.m */,
+				227BA8D121988A0600E92049 /* epub-resource.h */,
+				227BA8D221988A2500E92049 /* epub-resource.m */,
+				22BF6BC321A851B400F367FA /* epub-utils.h */,
+				22BF6BC421A8522000F367FA /* epub-utils.m */,
+			);
+			path = epub;
+			sourceTree = "<group>";
+		};
+		229FB288214BB4840059C714 /* booktest */ = {
+			isa = PBXGroup;
+			children = (
+				229FB289214BB4840059C714 /* main.c */,
+			);
+			path = booktest;
+			sourceTree = "<group>";
+		};
+		229FB2C5214BBE4D0059C714 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2263E1A72196DABA00E199D8 /* libxml2.tbd */,
+				223102A22191F7E400E09E82 /* libarchive.tbd */,
+				2243490F217DBDD0006393F5 /* libarchive.16.dylib */,
+				2243490D217DBD19006393F5 /* libarchive.a */,
+				224348DE217DB0C3006393F5 /* libz.tbd */,
+				22434771217DAA0D006393F5 /* libmobi.dylib */,
+				22D27337216F57FA00E91A7B /* libsqlite3.tbd */,
+				229FB2C6214BBE4D0059C714 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22FEE9B121AA8A3100C01D15 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				22FEE9B221AA8AD400C01D15 /* book-play.h */,
+				22FEE9CB21AA8D8D00C01D15 /* book-play.m */,
+			);
+			name = video;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		150039B918E06BC100D33077 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FB2BB31A1A32970052D5C5 /* encryption.h in Headers */,
+				150244901CD3A18F0075F4EC /* sha1.h in Headers */,
+				156AA65E1C81A3860085335A /* xmlwriter.h in Headers */,
+				1504FD861CBE880B002AA042 /* meta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225E0AE421965E9D0080E652 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225E0AEB21965E9D0080E652 /* epub.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		150039BA18E06BC100D33077 /* mobi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150039BF18E06BC100D33077 /* Build configuration list for PBXNativeTarget "mobi" */;
+			buildPhases = (
+				150039B718E06BC100D33077 /* Sources */,
+				150039B818E06BC100D33077 /* Frameworks */,
+				150039B918E06BC100D33077 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mobi;
+			productName = libmobi;
+			productReference = 150039BB18E06BC100D33077 /* libmobi.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		154306531CB78A3D006AB398 /* mobimeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1543065A1CB78A3D006AB398 /* Build configuration list for PBXNativeTarget "mobimeta" */;
+			buildPhases = (
+				154306501CB78A3D006AB398 /* Sources */,
+				154306511CB78A3D006AB398 /* Frameworks */,
+				154306521CB78A3D006AB398 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1543065D1CB78B78006AB398 /* PBXTargetDependency */,
+			);
+			name = mobimeta;
+			productName = write_test;
+			productReference = 154306541CB78A3D006AB398 /* mobimeta */;
+			productType = "com.apple.product-type.tool";
+		};
+		1553331518E37F7000334E23 /* mobitool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1553331C18E37F7100334E23 /* Build configuration list for PBXNativeTarget "mobitool" */;
+			buildPhases = (
+				1553331218E37F7000334E23 /* Sources */,
+				1553331318E37F7000334E23 /* Frameworks */,
+				1553331418E37F7000334E23 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1553332018E37FB800334E23 /* PBXTargetDependency */,
+			);
+			name = mobitool;
+			productName = test;
+			productReference = 1553331618E37F7000334E23 /* mobitool */;
+			productType = "com.apple.product-type.tool";
+		};
+		22155DF02150B18000DE9A40 /* book */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22155E022150B18000DE9A40 /* Build configuration list for PBXNativeTarget "book" */;
+			buildPhases = (
+				22155DED2150B18000DE9A40 /* Sources */,
+				22155DEE2150B18000DE9A40 /* Frameworks */,
+				22155DEF2150B18000DE9A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = book;
+			productName = book;
+			productReference = 22155DF12150B18000DE9A40 /* book.app */;
+			productType = "com.apple.product-type.application";
+		};
+		223102972191F70200E09E82 /* archivetest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2231029C2191F70200E09E82 /* Build configuration list for PBXNativeTarget "archivetest" */;
+			buildPhases = (
+				223102942191F70200E09E82 /* Sources */,
+				223102952191F70200E09E82 /* Frameworks */,
+				223102962191F70200E09E82 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = archivetest;
+			productName = archivetest;
+			productReference = 223102982191F70200E09E82 /* archivetest */;
+			productType = "com.apple.product-type.tool";
+		};
+		225E0AE721965E9D0080E652 /* epub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 225E0AF021965E9D0080E652 /* Build configuration list for PBXNativeTarget "epub" */;
+			buildPhases = (
+				225E0AE421965E9D0080E652 /* Headers */,
+				225E0AE521965E9D0080E652 /* Sources */,
+				225E0AE621965E9D0080E652 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epub;
+			productName = epub;
+			productReference = 225E0AE821965E9D0080E652 /* libepub.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		229FB286214BB4840059C714 /* booktest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229FB28D214BB4840059C714 /* Build configuration list for PBXNativeTarget "booktest" */;
+			buildPhases = (
+				229FB283214BB4840059C714 /* Sources */,
+				229FB284214BB4840059C714 /* Frameworks */,
+				229FB285214BB4840059C714 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229FB290214BB9770059C714 /* PBXTargetDependency */,
+			);
+			name = booktest;
+			productName = booktest;
+			productReference = 229FB287214BB4840059C714 /* booktest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		150039B318E06BC100D33077 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Bartek Fabiszewski";
+				TargetAttributes = {
+					154306531CB78A3D006AB398 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					22155DF02150B18000DE9A40 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = H2AMV3MWEU;
+						ProvisioningStyle = Automatic;
+					};
+					223102972191F70200E09E82 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					225E0AE721965E9D0080E652 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					229FB286214BB4840059C714 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 150039B618E06BC100D33077 /* Build configuration list for PBXProject "ebook-macos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 150039B218E06BC100D33077;
+			productRefGroup = 150039BC18E06BC100D33077 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				150039BA18E06BC100D33077 /* mobi */,
+				1553331518E37F7000334E23 /* mobitool */,
+				154306531CB78A3D006AB398 /* mobimeta */,
+				229FB286214BB4840059C714 /* booktest */,
+				22155DF02150B18000DE9A40 /* book */,
+				223102972191F70200E09E82 /* archivetest */,
+				225E0AE721965E9D0080E652 /* epub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22155DEF2150B18000DE9A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22155DFD2150B18000DE9A40 /* Assets.xcassets in Resources */,
+				22400C17217ED52900B1B3E4 /* BookApp.xib in Resources */,
+				2232BDA02397BB2F00B67A28 /* BrowserWindow.xib in Resources */,
+				2246DF9921709F6E00063587 /* BookWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150039B718E06BC100D33077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1550ADCE18E4B925006F9257 /* compression.c in Sources */,
+				15EA81DF1A14D5AC00138554 /* structure.c in Sources */,
+				1563314718EC36A200D4B858 /* debug.c in Sources */,
+				15F1A1D118F4192D009CFE05 /* util.c in Sources */,
+				1502448F1CD3A18F0075F4EC /* sha1.c in Sources */,
+				15603889192D2E1A002EDB1A /* opf.c in Sources */,
+				150A318D18E19BF9001A7AD7 /* write.c in Sources */,
+				1550ADC318E427D7006F9257 /* buffer.c in Sources */,
+				1553330118E359AE00334E23 /* read.c in Sources */,
+				157DF7AD191A514D00191502 /* index.c in Sources */,
+				153D91DB18E9630000E807B6 /* memory.c in Sources */,
+				156AA65D1C81A3860085335A /* xmlwriter.c in Sources */,
+				15AB2CB419572C2800EB7F74 /* parse_rawml.c in Sources */,
+				15FB2BB21A1A32970052D5C5 /* encryption.c in Sources */,
+				1504FD851CBE880B002AA042 /* meta.c in Sources */,
+				151A46661909312900FAF3F4 /* miniz.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154306501CB78A3D006AB398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154C2D411CC64A170041DD0E /* common.c in Sources */,
+				1543065B1CB78A45006AB398 /* mobimeta.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1553331218E37F7000334E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154C2D401CC64A170041DD0E /* common.c in Sources */,
+				15615F0818F58C85004EBB6E /* mobitool.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22155DED2150B18000DE9A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BDF684217AA9EE00CE46D7 /* BookMarkOutlineView.m in Sources */,
+				2246DF952170305300063587 /* BookWindow.m in Sources */,
+				22B365992150F21600516EC0 /* Book-mobi.m in Sources */,
+				2211964D2160774700CD260A /* Book-nav.m in Sources */,
+				22FEE9CC21AA8D8D00C01D15 /* book-play.m in Sources */,
+				2232BD9B2397BB1800B67A28 /* BrowserWindow.m in Sources */,
+				22E1723B21770EEE003C0124 /* BookDatabase.m in Sources */,
+				2204714721800ED7001AFAB7 /* BookSearchField.m in Sources */,
+				22B25F3E21786A080067DBFF /* BookToolbar.m in Sources */,
+				22BDF687217ABF7F00CE46D7 /* BookNavOutlineView.m in Sources */,
+				22155DF82150B18000DE9A40 /* main.m in Sources */,
+				22462C862199B897004A259C /* Book-epub.m in Sources */,
+				226BEE652182FFAA00C45BD5 /* BookFileImport.m in Sources */,
+				225532442179DAA2008CF384 /* BookInfoTableView.m in Sources */,
+				22EA87BA216BAA4C0055B960 /* Book-mark.m in Sources */,
+				220C854F2151016600EE11A9 /* Book-doc.m in Sources */,
+				2232BD9C2397BB1800B67A28 /* BookWindowController.m in Sources */,
+				224771E7217EC5C9004C3C98 /* BookMainWindow.m in Sources */,
+				2232BD9D2397BB1800B67A28 /* BrowserWindowController.m in Sources */,
+				227D937D217EFBC900D45533 /* BookReadView.m in Sources */,
+				2239FDAE2152625500071349 /* BookRead.m in Sources */,
+				229AC813215499AF0053FE69 /* Book-chapter.m in Sources */,
+				22E1723E217734A8003C0124 /* BookInfo.m in Sources */,
+				22155DF52150B18000DE9A40 /* AppDelegate.m in Sources */,
+				22AB4BB8217F027C00817CCB /* BookReadWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223102942191F70200E09E82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2231029B2191F70200E09E82 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225E0AE521965E9D0080E652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2263E1A52196D6C100E199D8 /* epub-archive.m in Sources */,
+				22BF6BC521A8522000F367FA /* epub-utils.m in Sources */,
+				227BA8D02197E4E600E92049 /* epub-doc.m in Sources */,
+				225E0AED21965E9D0080E652 /* epub.m in Sources */,
+				227BA8D321988A2500E92049 /* epub-resource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229FB283214BB4840059C714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229FB28A214BB4840059C714 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1543065D1CB78B78006AB398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150039BA18E06BC100D33077 /* mobi */;
+			targetProxy = 1543065C1CB78B78006AB398 /* PBXContainerItemProxy */;
+		};
+		1553332018E37FB800334E23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150039BA18E06BC100D33077 /* mobi */;
+			targetProxy = 1553331F18E37FB800334E23 /* PBXContainerItemProxy */;
+		};
+		229FB290214BB9770059C714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150039BA18E06BC100D33077 /* mobi */;
+			targetProxy = 229FB28F214BB9770059C714 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		150039BD18E06BC100D33077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DHAVE_CONFIG_H",
+					"-DHAVE_STRDUP",
+				);
+				OTHER_LDFLAGS = "-lz";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		150039BE18E06BC100D33077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DHAVE_CONFIG_H",
+					"-DHAVE_STRDUP",
+				);
+				OTHER_LDFLAGS = "-lz";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		150039C018E06BC100D33077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2,
+				);
+				OTHER_CFLAGS = (
+					"-DHAVE_CONFIG_H",
+					"-DHAVE_STRDUP",
+				);
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-lz",
+				);
+				PRODUCT_NAME = mobi;
+			};
+			name = Debug;
+		};
+		150039C118E06BC100D33077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2,
+				);
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-lz",
+				);
+				PRODUCT_NAME = mobi;
+			};
+			name = Release;
+		};
+		154306581CB78A3D006AB398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					./src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		154306591CB78A3D006AB398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					./src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1553331D18E37F7100334E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = ./src;
+				"HEADER_SEARCH_PATHS[arch=*]" = ./src;
+				PRODUCT_NAME = mobitool;
+			};
+			name = Debug;
+		};
+		1553331E18E37F7100334E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = ./src;
+				PRODUCT_NAME = mobitool;
+			};
+			name = Release;
+		};
+		22155E032150B18000DE9A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H2AMV3MWEU;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = book/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = booktable.book;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		22155E042150B18000DE9A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = H2AMV3MWEU;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = book/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = booktable.book;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		2231029D2191F70200E09E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2231029E2191F70200E09E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		225E0AEE21965E9D0080E652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+					/usr/local/workspace/code/lab/gcc/libarchive/libarchive,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/workspace/code/lab/gcc/libarchive/libarchive/Debug;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		225E0AEF21965E9D0080E652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+					/usr/local/workspace/code/lab/gcc/libarchive/libarchive,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/workspace/code/lab/gcc/libarchive/libarchive/Debug;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		229FB28B214BB4840059C714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		229FB28C214BB4840059C714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		150039B618E06BC100D33077 /* Build configuration list for PBXProject "ebook-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150039BD18E06BC100D33077 /* Debug */,
+				150039BE18E06BC100D33077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150039BF18E06BC100D33077 /* Build configuration list for PBXNativeTarget "mobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150039C018E06BC100D33077 /* Debug */,
+				150039C118E06BC100D33077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1543065A1CB78A3D006AB398 /* Build configuration list for PBXNativeTarget "mobimeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154306581CB78A3D006AB398 /* Debug */,
+				154306591CB78A3D006AB398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1553331C18E37F7100334E23 /* Build configuration list for PBXNativeTarget "mobitool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1553331D18E37F7100334E23 /* Debug */,
+				1553331E18E37F7100334E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22155E022150B18000DE9A40 /* Build configuration list for PBXNativeTarget "book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22155E032150B18000DE9A40 /* Debug */,
+				22155E042150B18000DE9A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2231029C2191F70200E09E82 /* Build configuration list for PBXNativeTarget "archivetest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2231029D2191F70200E09E82 /* Debug */,
+				2231029E2191F70200E09E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		225E0AF021965E9D0080E652 /* Build configuration list for PBXNativeTarget "epub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225E0AEE21965E9D0080E652 /* Debug */,
+				225E0AEF21965E9D0080E652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229FB28D214BB4840059C714 /* Build configuration list for PBXNativeTarget "booktest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229FB28B214BB4840059C714 /* Debug */,
+				229FB28C214BB4840059C714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 150039B318E06BC100D33077 /* Project object */;
+}
